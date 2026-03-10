@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series | alertaCJBflix</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+}
+
+/* NAVBAR */
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#000;
+z-index:10;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:#ff003c;
+}
+
+.nav-links a{
+margin-left:20px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#ff003c;
+}
+
+/* HEADER */
+.header{
+margin-top:100px;
+padding:40px;
+}
+
+.header h1{
+font-size:40px;
+margin-bottom:10px;
+color:#ff003c;
+}
+
+/* GRID */
+.series-grid{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+gap:25px;
+}
+
+.series-card{
+position:relative;
+overflow:hidden;
+border-radius:12px;
+cursor:pointer;
+transition:0.4s;
+}
+
+.series-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+transition:0.4s;
+}
+
+.series-card:hover img{
+transform:scale(1.1);
+filter:brightness(40%);
+}
+
+.series-overlay{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+padding:20px;
+opacity:0;
+transition:0.4s;
+}
+
+.series-card:hover .series-overlay{
+opacity:1;
+}
+
+.series-overlay h3{
+margin-bottom:5px;
+}
+
+.series-overlay p{
+font-size:14px;
+margin-bottom:10px;
+color:#ccc;
+}
+
+.series-overlay button{
+padding:8px 15px;
+border:none;
+background:#ff003c;
+color:white;
+cursor:pointer;
+border-radius:5px;
+font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">alertaCJBflix</div>
+<div class="nav-links">
+<a href="clon.html">Inicio</a>
+<a href="series.html">Series</a>
+<a href="peliculas.html">Películas</a>
+<a href="lista.html">Mi Lista</a>
+</div>
+</div>
+
+<div class="header">
+<h1>Series Disponibles</h1>
+<p>Descubre nuestras series exclusivas y producciones originales.</p>
+</div>
+
+<div class="series-grid">
+
+<div class="series-card">
+<img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4">
+<div class="series-overlay">
+<h3>Misterio Oculto</h3>
+<p>Suspenso • 3 Temporadas</p>
+<button>Ver Serie</button>
+</div>
+</div>
+
+<div class="series-card">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<div class="series-overlay">
+<h3>Ciudad Oscura</h3>
+<p>Drama • 2 Temporadas</p>
+<button>Ver Serie</button>
+</div>
+</div>
+
+<div class="series-card">
+<img src="https://images.unsplash.com/photo-1515169067868-5387ec356754">
+<div class="series-overlay">
+<h3>Historias Reales</h3>
+<p>Documental • 4 Temporadas</p>
+<button>Ver Serie</button>
+</div>
+</div>
+
+<div class="series-card">
+<img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f">
+<div class="series-overlay">
+<h3>Futuro Global</h3>
+<p>Ciencia Ficción • 1 Temporada</p>
+<button>Ver Serie</button>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
