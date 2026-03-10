@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto HTML - Ejemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Royal</h1>
+        <p><strong>Empresa de Marketing</strong> Utilizando Redes sociales</p>
+        <nav>
+            <ul>
+                <li><a href="#seccion1">Acerca de</a></li>
+                <li><a href="#seccion2">Lista</a></li>
+                <li><a href="#seccion3">Tabla</a></li>
+                <li><a href="#seccion4">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="seccion1">
+        <h2>Acerca del Proyecto</h2>
+        <p>Empresa especializada en marketing digital y redes sociales</p>
+        <blockquote>"Impulsando tus proyectos"</blockquote>
+        <hr>
+    </section>
+
+    <section id="seccion2">
+        <h2>Listas</h2>
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Lista no ordenada</h3>
+        <ul>
+            <li>Programación</li>
+            <li>Diseño</li>
+            <li>Desarrollo Web</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section id="seccion3">
+        <h2>Tabla</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Empresa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>Repostreria Ana</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Pedro auto import</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </section>
+
+    <section id="seccion4">
+        <h2>Formulario</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="correo@ejemplo.com">
+
+            <label>Tipo:</label>
+<div class="radio-group">
+    <input type="radio" id="Influencer" name="genero" value="Influencer">
+    <label for="Influencer">Influencer</label>
+
+    <input type="radio" id="empresa" name="genero" value="empresa">
+    <label for="empresa">Empresa</label>
+</div>
+
+<label>Intereses:</label>
+<div class="check-group">
+    <input type="checkbox" id="ventas" value="ventas">
+    <label for="ventas">Ventas</label>
+
+    <input type="checkbox" id="publico" value="publico">
+    <label for="publico">Publicidad</label>
+</div>
+
+
+            <textarea placeholder="Escribe un mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Proyecto HTML - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
