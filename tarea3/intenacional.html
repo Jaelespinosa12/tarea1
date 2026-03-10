@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Alerta CJB - Internacional</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Open Sans',sans-serif;
+background:#f2f4f8;
+}
+
+header{
+background:linear-gradient(135deg,#0a1f44,#142b5c);
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.section-title{
+background:#009966;   /* verde internacional */
+color:white;
+padding:10px;
+text-align:center;
+font-weight:bold;
+}
+
+nav{
+background-color:#111c35;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{color:#00cc99;}
+
+.container{
+display:grid;
+grid-template-columns:3fr 1fr;
+gap:25px;
+padding:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.card h2{
+font-family:'Montserrat',sans-serif;
+color:#0a1f44;
+margin-bottom:10px;
+}
+
+.sidebar{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.subscribe input{
+width:100%;
+padding:8px;
+margin-top:10px;
+}
+
+.subscribe button{
+width:100%;
+padding:10px;
+margin-top:10px;
+background:#0a1f44;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.subscribe button:hover{background:#009966;}
+
+footer{
+background:#0a1f44;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+@media(max-width:768px){
+.container{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🚨 Alerta CJB 🚨</h1>
+<p>Información inmediata, clara y confiable</p>
+</header>
+
+<div class="section-title">
+SECCIÓN INTERNACIONAL
+</div>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="politica.html">Política</a>
+<a href="economia.html">Economía</a>
+<a href="deportes.html">Deportes</a>
+<a href="tecnologia.html">Tecnología</a>
+<a href="entretenimiento.html">Entretenimiento</a>
+<a href="internacional.html">Internacional</a>
+</nav>
+
+<div class="container">
+
+<main>
+
+<div class="card">
+<h2>Líderes mundiales se reúnen para cumbre internacional</h2>
+<img src="int1.jpeg">
+<p>Representantes de distintos países participaron en una reunión clave para discutir cooperación económica y seguridad global.</p>
+</div>
+
+<div class="card">
+<h2>Nueva misión espacial internacional es lanzada con éxito</h2>
+<img src="int2.jpg">
+<p>La misión conjunta entre varias agencias espaciales marca un nuevo paso en la exploración científica.</p>
+</div>
+
+<div class="card">
+<h2>Acuerdo comercial fortalece relaciones entre continentes</h2>
+<img src="int3.jpg">
+<p>El nuevo tratado busca facilitar el comercio, reducir aranceles y promover el crecimiento económico internacional.</p>
+</div>
+
+</main>
+
+<aside class="sidebar">
+<h3>Noticias internacionales destacadas</h3>
+<p>• Crisis climática global</p>
+<p>• Nuevas alianzas diplomáticas</p>
+<p>• Innovaciones en transporte mundial</p>
+
+<h3>Suscríbete</h3>
+<div class="subscribe">
+<input type="email" placeholder="Ingresa tu correo">
+<button>Suscribirse</button>
+</div>
+
+</aside>
+
+</div>
+
+<footer>
+<p>© 2026 Alerta CJB | Sección Internacional</p>
+</footer>
+
+</body>
+</html>

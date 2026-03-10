@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alerta CJB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f2f4f8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0a1f44, #142b5c);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #111c35;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff3b3b;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 25px;
+            padding: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #0a1f44;
+            margin-bottom: 10px;
+        }
+
+        .urgent {
+            color: red;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .sidebar {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h3 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0a1f44;
+            padding-bottom: 5px;
+        }
+
+        .sidebar p {
+            margin: 8px 0;
+        }
+
+        .subscribe input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        .subscribe button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #0a1f44;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .subscribe button:hover {
+            background: #ff3b3b;
+        }
+
+        footer {
+            background: #0a1f44;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚨 Alerta CJB 🚨</h1>
+    <p>Información inmediata, clara y confiable</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="politica.html" target="_blank">Política</a>
+    <a href="economia.html" target="_blank">Economía</a>
+    <a href="deportes.html" target="_blank">Deportes</a>
+    <a href="tecnologia.html" target="_blank">Tecnología</a>
+    <a href="entretenimiento.html" target="_blank">Entretenimiento</a>
+    <a href="internacional.html" target="_blank">Internacional</a>
+</nav>
+
+
+<div class="container">
+
+    <main>
+        <div class="card">
+            <span class="urgent">ÚLTIMA HORA</span>
+            <h2>Importante anuncio económico impacta al país</h2>
+            <img src="noticia.jpeg" alt="Noticia principal">
+            <p>Autoridades informaron nuevas medidas económicas que buscan fortalecer el crecimiento y la estabilidad financiera nacional.</p>
+        </div>
+
+        <div class="card">
+            <h2>Avances tecnológicos marcan tendencia en 2026</h2>
+            <img src="tecnologia.png" alt="Noticia principal">
+            <p>Expertos destacan el crecimiento acelerado del sector digital y la innovación en inteligencia artificial.</p>
+        </div>
+
+        <div class="card">
+            <h2>Equipo nacional logra victoria histórica</h2>
+            <img src="deporte.jpg" alt="Noticia principal">
+            <p>El conjunto obtuvo un triunfo decisivo que lo posiciona como favorito en la competencia internacional.</p>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <h3> Noticias Populares</h3>
+        <p>• Crecimiento del turismo este año</p>
+        <p>• Nueva reforma educativa</p>
+        <p>• Eventos culturales destacados</p>
+
+        <h3> Suscríbete</h3>
+        <div class="subscribe">
+            <input type="email" placeholder="Ingresa tu correo">
+            <button>Suscribirse</button>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <p>© 2026 Alerta CJB | Blog de Noticias Digital</p>
+</footer>
+
+</body>
+</html>
